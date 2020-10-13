@@ -1,0 +1,39 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+                    &         OLS         &          IV         & Interaction         &IV Interaction         \\
+\hline
+Bribe Share         &     -0.0016\sym{***}&     -0.0017         &     -0.0080\sym{**} &     -0.1950         \\
+                    &     (0.000)         &     (0.239)         &     (0.006)         &     (0.501)         \\
+Firm Size           &     -0.0437\sym{***}&     -0.0433\sym{***}&     -0.0631\sym{***}&     -0.0715\sym{***}\\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.000)         \\
+Firm Age            &     -0.0002         &     -0.0002         &      0.0003         &      0.0002         \\
+                    &     (0.092)         &     (0.117)         &     (0.252)         &     (0.521)         \\
+Part of a Large Firm&      0.0467\sym{***}&      0.0467\sym{***}&      0.0503\sym{**} &      0.0310         \\
+                    &     (0.000)         &     (0.000)         &     (0.005)         &     (0.378)         \\
+Domestic Private Share&      0.0001         &      0.0001         &      0.0000         &      0.0002         \\
+                    &     (0.779)         &     (0.764)         &     (1.000)         &     (0.897)         \\
+Government Share    &      0.0013\sym{***}&      0.0013\sym{***}&      0.0020         &      0.0020         \\
+                    &     (0.000)         &     (0.000)         &     (0.374)         &     (0.406)         \\
+Foreign Share       &     -0.0003         &     -0.0003         &     -0.0001         &     -0.0000         \\
+                    &     (0.203)         &     (0.219)         &     (0.902)         &     (0.989)         \\
+Annual Sale (log)   &     -0.0181\sym{***}&     -0.0183\sym{***}&     -0.0249\sym{***}&     -0.0348\sym{*}  \\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.034)         \\
+Competition         &                     &                     &     -0.0237\sym{**} &     -0.0746         \\
+                    &                     &                     &     (0.003)         &     (0.345)         \\
+Bribe Share $\times$ Competition&                     &                     &      0.0024\sym{*}  &      0.0539         \\
+                    &                     &                     &     (0.036)         &     (0.509)         \\
+Constant            &      0.7808\sym{***}&      0.7686\sym{***}&      0.8000\sym{***}&      1.1201\sym{*}  \\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.031)         \\
+\hline
+N                   &  50913.0000         &  49586.0000         &   6567.0000         &   6480.0000         \\
+Industry FE         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Country FE          &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

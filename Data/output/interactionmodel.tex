@@ -1,0 +1,39 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+                    &         OLS         &Weighted-OLS         &          IV         & Weighted-IV         \\
+\hline
+Corruption          &     -0.0404\sym{***}&     -0.0185         &     -0.0704         &      0.2133         \\
+                    &     (0.000)         &     (0.417)         &     (0.104)         &     (0.432)         \\
+Competition         &     -0.0318\sym{**} &     -0.0059         &     -0.0522\sym{*}  &     -0.0671         \\
+                    &     (0.002)         &     (0.807)         &     (0.040)         &     (0.394)         \\
+Corruption $\times$ Competition&      0.0085\sym{*}  &     -0.0014         &      0.0192         &      0.0051         \\
+                    &     (0.033)         &     (0.883)         &     (0.123)         &     (0.918)         \\
+Firm Size           &     -0.0513\sym{***}&     -0.0599\sym{*}  &     -0.0516\sym{***}&     -0.0475         \\
+                    &     (0.000)         &     (0.023)         &     (0.000)         &     (0.176)         \\
+Firm Age            &      0.0003         &     -0.0001         &      0.0003         &     -0.0007         \\
+                    &     (0.268)         &     (0.874)         &     (0.260)         &     (0.410)         \\
+Part of a Large Firm&      0.0692\sym{***}&      0.0593\sym{+}  &      0.0687\sym{***}&      0.0642         \\
+                    &     (0.000)         &     (0.065)         &     (0.000)         &     (0.118)         \\
+Domestic Private Share&     -0.0006         &      0.0002         &     -0.0006         &      0.0014         \\
+                    &     (0.354)         &     (0.890)         &     (0.357)         &     (0.426)         \\
+Government Share    &      0.0021         &      0.0025         &      0.0020         &      0.0037         \\
+                    &     (0.198)         &     (0.280)         &     (0.233)         &     (0.202)         \\
+Foreign Share       &     -0.0008         &      0.0001         &     -0.0007         &      0.0010         \\
+                    &     (0.268)         &     (0.936)         &     (0.273)         &     (0.588)         \\
+Annual Sale (log)   &     -0.0264\sym{***}&     -0.0221\sym{*}  &     -0.0261\sym{***}&     -0.0158         \\
+                    &     (0.000)         &     (0.027)         &     (0.000)         &     (0.225)         \\
+Constant            &      0.9513\sym{***}&      0.7384\sym{***}&      1.0065\sym{***}&     -0.0758         \\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.923)         \\
+\hline
+N                   &  10197.0000         &  10197.0000         &  10197.0000         &  10197.0000         \\
+Industry FE         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Country FE          &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<0.10\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

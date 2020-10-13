@@ -1,0 +1,37 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         \\
+                    &         OLS         &Weighted-OLS         \\
+\hline
+Corruption          &     -0.0208\sym{*}  &      0.0309         \\
+                    &     (0.042)         &     (0.665)         \\
+Firm Size           &     -0.0510\sym{***}&     -0.0604\sym{*}  \\
+                    &     (0.000)         &     (0.036)         \\
+Firm Age            &      0.0003         &     -0.0001         \\
+                    &     (0.268)         &     (0.944)         \\
+Part of a Large Firm&      0.0697\sym{***}&      0.0648         \\
+                    &     (0.000)         &     (0.092)         \\
+Domestic Private Share&     -0.0006         &      0.0007         \\
+                    &     (0.344)         &     (0.629)         \\
+Government Share    &      0.0022         &      0.0038         \\
+                    &     (0.176)         &     (0.108)         \\
+Foreign Share       &     -0.0008         &      0.0007         \\
+                    &     (0.258)         &     (0.686)         \\
+Annual Sale (log)   &     -0.0265\sym{***}&     -0.0184         \\
+                    &     (0.000)         &     (0.123)         \\
+Competition         &     -0.0148\sym{*}  &     -0.0217         \\
+                    &     (0.021)         &     (0.270)         \\
+Constant            &      0.9169\sym{***}&      0.5752         \\
+                    &     (0.000)         &     (0.061)         \\
+\hline
+N                   &  10197.0000         &  10197.0000         \\
+Industry FE         &         Yes         &         Yes         \\
+Country FE          &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

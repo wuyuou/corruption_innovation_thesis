@@ -1,0 +1,35 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+                    &         OLS         &Weighted-OLS         &          IV         & Weighted-IV         \\
+\hline
+Corruption          &     -0.0181\sym{***}&     -0.0252\sym{***}&     -0.0426\sym{***}&     -0.0645\sym{***}\\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.000)         \\
+Firm Size           &     -0.0412\sym{***}&     -0.0436\sym{***}&     -0.0405\sym{***}&     -0.0404\sym{**} \\
+                    &     (0.000)         &     (0.001)         &     (0.000)         &     (0.001)         \\
+Firm Age            &     -0.0002         &      0.0008         &     -0.0002         &      0.0008\sym{*}  \\
+                    &     (0.154)         &     (0.056)         &     (0.168)         &     (0.040)         \\
+Part of a Large Firm&      0.0530\sym{***}&      0.0938\sym{***}&      0.0518\sym{***}&      0.0873\sym{***}\\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.000)         \\
+Domestic Private Share&      0.0002         &      0.0002         &      0.0002         &      0.0002         \\
+                    &     (0.199)         &     (0.835)         &     (0.141)         &     (0.845)         \\
+Government Share    &      0.0011\sym{***}&      0.0009         &      0.0011\sym{***}&      0.0009         \\
+                    &     (0.001)         &     (0.509)         &     (0.001)         &     (0.532)         \\
+Foreign Share       &     -0.0001         &     -0.0010         &     -0.0001         &     -0.0010         \\
+                    &     (0.462)         &     (0.257)         &     (0.577)         &     (0.248)         \\
+Annual Sale (log)   &     -0.0185\sym{***}&     -0.0170\sym{**} &     -0.0187\sym{***}&     -0.0178\sym{***}\\
+                    &     (0.000)         &     (0.001)         &     (0.000)         &     (0.001)         \\
+Constant            &      0.8067\sym{***}&      0.6710\sym{***}&      0.8931\sym{***}&      0.8187\sym{***}\\
+                    &     (0.000)         &     (0.000)         &     (0.000)         &     (0.000)         \\
+\hline
+N                   &  68277.0000         &  68277.0000         &  68277.0000         &  68277.0000         \\
+Industry FE         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Country FE          &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
